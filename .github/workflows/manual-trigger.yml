@@ -1,0 +1,11 @@
+name: Manual Trigger Example
+
+on:
+  workflow_dispatch:  # Enables manual or API-based triggering
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello from GitHub Actions!"
